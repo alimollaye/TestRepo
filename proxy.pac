@@ -1,9 +1,5 @@
 function FindProxyForURL(url, host) {
-  if (isBlocked(url)) {
     return "PROXY 127.0.0.1:1080";
-  } else {
-    return "DIRECT";
-  }
 }
 
 function isBlocked(url) {
